@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 写一个函数getMaxPlus(num1,num2,num3)，能返回传入的任意三个数字的最大值。 -->
+</body>
+    <script>
+        function getMaxPlus(num1,num2,num3) {
+            var a = 0; 
+            if(num1 > num2 && num1 >num3) {
+                alert("这三个数最大的数为" + num1);
+                return;
+            } else if(num2 > num1 && num2 > num3) {
+                alert("这三个数最大的数为" + num2);
+                return;
+            } else alert("这三个数最大的数为" + num3);
+        }
+        getMaxPlus(parseInt(prompt("请输入一个你想比较的数")),parseInt(prompt("请输入一个你想比较的数")),parseInt(prompt("请输入一个你想比较的数")));
+    </script>
+</html>
