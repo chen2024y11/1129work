@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 写一个函数getCeil(num),  如果传入的是一个小数，就对该数向上取整并返回取整后的值。反之就返回该数的原值。如： 5.01 ---  6     4.99 -- 5    5 -- 5    -1 --- -1    -1.5  --- -1 -->
+</body>
+    <script>
+        function getCeil(num) {
+            var a = 0;
+            if(num % 1 == 0) {
+                a = num;
+                alert("您输入的数并不是小数" + a);
+                return;
+            } else 
+            a = Math.ceil(num);
+            alert("您输入的小数向上取整后为" + a);
+            return;
+        }
+        getCeil(Number(prompt("请输入小数")));
+    </script>
+</html>
