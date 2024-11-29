@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 写一个函数getMax(num1, num2)，能返回传入的任意两个数字的最大值。 -->
+</body>
+    <script>
+        function getMax(num1,num2) {
+            var a = 0;
+            if(num1 > num2) {
+                alert("最大的数为" + num1)
+                return;
+            } else
+                num1 = a;
+                num2 = num1;
+                a = num2;
+                alert("最大的数为" + num2)
+                return;
+            }
+            getMax(parseInt(prompt("请输入一个数")),parseInt(prompt("请输入另一个数")));
+    </script>
+</html>
